@@ -44,8 +44,8 @@ public class ExamScreenStep {
 	 * 2. Command the - And Check the "Not Reported" student - this feature file 
 	 ==========================================================================*/
 	
-	String StudentAcademicId = "23010006";
-	String firstCenterName = "COMPUTER LAB";
+	String StudentAcademicId = "";
+	String firstCenterName = "";
 
 	public ExamScreenStep(Hooks base, LibraryClass library, TimeConvertIntoSeconds timeClass) throws IOException {
 		this.base = base;
@@ -187,12 +187,14 @@ public class ExamScreenStep {
 		studenLogin.getStudentSignInBtn().click();
 		
 		//Select the session while student login
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		library.waitForClickableElement(tempDriver, studenLogin.getSelectYourSession(), 20);
 		studenLogin.getSelectYourSession().click();
+		Thread.sleep(2000);
 		List<WebElement> sessionTimeList = studenLogin.getSessionTimeList();
 		for (int i = 0; i < sessionTimeList.size(); i++) {
 			sessionTimeList.get(i).click();
+			break;
 		}
 		
 		library.waitForClickableElement(tempDriver, studenLogin.getSessionProceedBtn(), 20);
