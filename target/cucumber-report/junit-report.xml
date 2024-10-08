@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="22.547" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="To verify the basic scenario of DigiExam Control" name="Exam Coordinator give the extra time for the student and check as a student" time="22.137">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;span class=&quot;mat-radio-label-content&quot;&gt;...&lt;/span&gt; is not clickable at point (678, 186). Other element would receive the click: &lt;div _ngcontent-umb-c276=&quot;&quot; class=&quot;loading-screen-wrapper ng-star-inserted&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.90)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38aede69f565765e2bd13680a8b22c94, clickElement {id=f.D1B979A6C0EC6A25FE5737840273D677.d.6D746B11808D1F20FEFF682321FFB7DE.e.25}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: /var/folders/84/lngl9f511pz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57073}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57073/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (38aede69f565765e2bd13680a8b22c94)] -&gt; xpath: //span[normalize-space(text())='Exam Coordinator']]
+Session ID: 38aede69f565765e2bd13680a8b22c94">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="mat-radio-label-content">...</span> is not clickable at point (678, 186). Other element would receive the click: <div _ngcontent-umb-c276="" class="loading-screen-wrapper ng-star-inserted">...</div>
+  (Session info: chrome=129.0.6668.90)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38aede69f565765e2bd13680a8b22c94, clickElement {id=f.D1B979A6C0EC6A25FE5737840273D677.d.6D746B11808D1F20FEFF682321FFB7DE.e.25}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: /var/folders/84/lngl9f511pz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57073}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57073/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (38aede69f565765e2bd13680a8b22c94)] -> xpath: //span[normalize-space(text())='Exam Coordinator']]
+Session ID: 38aede69f565765e2bd13680a8b22c94
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at com.StepDefination.LoginStep.login_as_a_admin(LoginStep.java:28)
+	at ✽.Login as a Admin(file:///Users/manikandan/Documents/Automation/Hackathon/src/test/resources/SeleniumFeatures/ExdendDuration.feature:79)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Login as a Admin......................................................failed
+And User click the view session button......................................skipped
+And User select the students tab............................................skipped
+When switch to the incognito window.........................................skipped
+And User login as a student.................................................skipped
+And Student done the authentication.........................................skipped
+And Student start the exam..................................................skipped
+And Check the student remaining time before "Give Extra Time"...............skipped
+And switch back to the main window..........................................skipped
+And Click more options for the exam "Started" student.......................skipped
+And Click "Give Extra Time" for that student................................skipped
+And User give the "10" mins time to that student............................skipped
+And User give "Natural Disastor" reason.....................................skipped
+When switch to the incognito window.........................................skipped
+And Check the student remaining time after "Give Extra Time"................skipped
+And Check the given extra time..............................................skipped
+And switch back to the main window..........................................skipped
+And Check the extra time added to the student...............................skipped
+]]></system-out>
+</testcase>
+</testsuite>

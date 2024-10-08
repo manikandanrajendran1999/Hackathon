@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-08T15:03:36 IST" name="Default suite" finished-at="2024-10-08T15:04:00 IST" duration-ms="23983">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.options.TestRunner@c430e6c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-10-08T15:03:36 IST" name="Default test" finished-at="2024-10-08T15:04:00 IST" duration-ms="23983">
+      <class name="cucumber.options.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.options.TestRunner@c430e6c]" started-at="2024-10-08T15:03:36 IST" name="setUpClass" finished-at="2024-10-08T15:03:37 IST" duration-ms="1176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@20a24edf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.options.TestRunner@c430e6c]" started-at="2024-10-08T15:03:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-08T15:04:00 IST" duration-ms="22336" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Exam Coordinator give the extra time for the student and check as a student"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To verify the basic scenario of DigiExam Control"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="mat-radio-label-content">...</span> is not clickable at point (678, 186). Other element would receive the click: <div _ngcontent-umb-c276="" class="loading-screen-wrapper ng-star-inserted">...</div>
+  (Session info: chrome=129.0.6668.90)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38aede69f565765e2bd13680a8b22c94, clickElement {id=f.D1B979A6C0EC6A25FE5737840273D677.d.6D746B11808D1F20FEFF682321FFB7DE.e.25}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: /var/folders/84/lngl9f511pz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57073}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57073/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (38aede69f565765e2bd13680a8b22c94)] -> xpath: //span[normalize-space(text())='Exam Coordinator']]
+Session ID: 38aede69f565765e2bd13680a8b22c94]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="mat-radio-label-content">...</span> is not clickable at point (678, 186). Other element would receive the click: <div _ngcontent-umb-c276="" class="loading-screen-wrapper ng-star-inserted">...</div>
+  (Session info: chrome=129.0.6668.90)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38aede69f565765e2bd13680a8b22c94, clickElement {id=f.D1B979A6C0EC6A25FE5737840273D677.d.6D746B11808D1F20FEFF682321FFB7DE.e.25}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: /var/folders/84/lngl9f511pz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57073}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57073/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (38aede69f565765e2bd13680a8b22c94)] -> xpath: //span[normalize-space(text())='Exam Coordinator']]
+Session ID: 38aede69f565765e2bd13680a8b22c94
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+at com.StepDefination.LoginStep.login_as_a_admin(LoginStep.java:28)
+at ✽.Login as a Admin(file:///Users/manikandan/Documents/Automation/Hackathon/src/test/resources/SeleniumFeatures/ExdendDuration.feature:79)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.options.TestRunner@c430e6c]" started-at="2024-10-08T15:04:00 IST" name="tearDownClass" finished-at="2024-10-08T15:04:00 IST" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:cucumber.options.TestRunner@c430e6c]" started-at="2024-10-08T15:04:05 IST" name="generateReport" finished-at="2024-10-08T15:04:07 IST" duration-ms="1846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- cucumber.options.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
